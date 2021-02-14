@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: osiegmar/seek-and-deploy@v0
+    - uses: osiegmar/seek-and-deploy-action@v0
       with:
         args: --bucket=${{ secrets.BUCKET }} website
       env:
